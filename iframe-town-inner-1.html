@@ -20,18 +20,18 @@
         <script>
             function addIframe() {
                 const iframe = document.createElement('iframe');
-                iframe.src = './iframe-town-inner-2.html';
+                iframe.src = './iframe-town-inner-added.html';
                 document.querySelector('.frame-container').appendChild(iframe);
             }
         </script>
     </head>
     <body>
         <div class="container">
-            <div class="text">Inner iframe</div>
+            <div class="text">Inner iframe #1</div>
             <button onclick="addIframe()">Add another iframe in...this iframe</button>
         </div>
         <div class="frame-container">
-            <iframe src="./iframe-town-inner-2.html"></iframe>
+            <iframe src="./iframe-town-inner-3.html"></iframe>
         </div>
     </body>
 </html>
