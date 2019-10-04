@@ -32,30 +32,12 @@
 				}
 			);
 
-			var accounts = [
-				{
-					zipCode: 90210,
-					id: 1,
-					city: 'Beverly Hills'
-				}, {
-					zipCode: 27601,
-					id: 2,
-					city: 'Raleigh'
-				}, {
-					zipCode: 10001,
-					id: 3,
-					city: 'New York City'
-				}
-			];
-
-			var account = accounts[Math.floor(Math.random() * accounts.length)];
-
 			pendo.initialize({
 				visitor: {
 					id: queryString.visitor || Math.floor(Math.random() * 999999)
 				},
 				apiKey: 'a25a32b8-5385-456e-5bba-1586d69d30e9',
-				account: account
+				account: 'pendoauto'
 			});
 
 		})('a25a32b8-5385-456e-5bba-1586d69d30e9');
